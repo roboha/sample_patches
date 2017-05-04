@@ -9,7 +9,6 @@ TILESIZE=256
 filename = sys.argv[1]
 
 S = gdal.Open(S)
-A = np.transpose(S.ReadAsArray(), (1,2,0))
 
 patches = []
 
